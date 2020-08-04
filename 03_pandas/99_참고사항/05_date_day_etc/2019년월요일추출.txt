@@ -1,0 +1,8 @@
+# 2019년 월요일 리스트 만들기
+
+import datetime as dt
+import pandas as pd
+
+daily_daterange = pd.date_range(start=dt.datetime(2019, 1, 1), end=dt.datetime(2019,12,31),                                 freq='B')
+daily_dataset = pd.DataFrame({'value' : range(len(daily_daterange))}, index=daily_daterange)
+daily_dataset.resample('W-MON').sum().index

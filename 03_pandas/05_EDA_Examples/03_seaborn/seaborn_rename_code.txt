@@ -1,0 +1,6 @@
+data.rename(columns=({'gender':'Gender',
+                      'race/ethnicity':'Race/Ethnicity',
+                      'parental level of education':'Parental_Level_of_Education'
+                    ,'lunch':'Lunch','test preparation course':'Test_Preparation_Course'
+                      ,'math score':'Math_Score','reading score':'Reading_Score'
+                     ,'writing score':'Writing_Score'}),inplace=True)
